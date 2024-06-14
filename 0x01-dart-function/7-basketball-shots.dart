@@ -1,26 +1,8 @@
 int whoWins(Map<String, int> teamA, Map<String, int> teamB) {
-  int teamAPoints = 0;
-  int teamBPoints = 0;
-
-  teamA.forEach((shotType, count) {
-    if (shotType == 'free throw') {
-      teamAPoints += count * 1;
-    } else if (shotType == '2 pointer') {
-      teamAPoints += count * 2;
-    } else if (shotType == '3 pointer') {
-      teamAPoints += count * 3;
-    }
-  });
-
-  teamB.forEach((shotType, count) {
-    if (shotType == 'free throw') {
-      teamBPoints += count * 1;
-    } else if (shotType == '2 pointer') {
-      teamBPoints += count * 2;
-    } else if (shotType == '3 pointer') {
-      teamBPoints += count * 3;
-    }
-  });
+  var teamAPoints = 0;
+  var teamBPoints = 0;
+  var teamAPoints = teamA['Free throws']! * 1 + teamA['2 pointers']! * 2 + teamA['3 pointers']! * 3;
+  var teamBPoints = teamB['Free throws']! * 1 + teamB['2 pointers']! * 2 + teamB['3 pointers']! * 3;
 
   if (teamAPoints > teamBPoints) {
     return 1;
