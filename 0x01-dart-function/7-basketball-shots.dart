@@ -1,6 +1,4 @@
 int whoWins(Map<String, int> teamA, Map<String, int> teamB) {
-  var teamAPoints = 0;
-  var teamBPoints = 0;
   var teamAPoints = teamA['Free throws']! * 1 + teamA['2 pointers']! * 2 + teamA['3 pointers']! * 3;
   var teamBPoints = teamB['Free throws']! * 1 + teamB['2 pointers']! * 2 + teamB['3 pointers']! * 3;
 
