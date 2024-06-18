@@ -22,10 +22,10 @@ String longestPalindrome(String s) {
   String longestPalindrome = "";
 
   if (s.length == 0) {
-    return None;
+    return 'none';
   }
-  
-  for (String s in strings) {
+
+  for (String s) {
     if (isPalindrome(s) && s.length > maxLength) {
       maxLength = s.length;
       longestPalindrome = s;
