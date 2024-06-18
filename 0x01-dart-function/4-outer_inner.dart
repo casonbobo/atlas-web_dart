@@ -1,8 +1,11 @@
 void outer(String name, String id) {
-  String innerName = inner(name);
-  print('Hello Agent $innerName your id is $id');
-}
+  String inner() {
+    var names = name.split(' ');
+    var lastNameInitial = names[1][0];
+    var firstName = names[0];
 
-String inner(String name) {
-  return 
+    return('Hello Agent $lastNameInitial.$firstName your id is $id');
+  }
+
+  print(inner());
 }
