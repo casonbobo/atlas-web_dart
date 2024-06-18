@@ -35,5 +35,5 @@ String longestPalindrome(String s) {
     }
   }
 
-  return longestPalindrome;
+  return longestPalindrome.isNotEmpty ? longestPalindrome : 'none';
 }
