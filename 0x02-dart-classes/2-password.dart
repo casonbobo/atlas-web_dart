@@ -12,6 +12,6 @@ class Password{
 
   @override
   String toString() {
-    return 'Your password is: $password';
+    return 'Your Password is: $password';
   }
 }
