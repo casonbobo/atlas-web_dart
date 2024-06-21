@@ -7,6 +7,6 @@ Future<String> getUser() async {
     String userID = userData['id'];
     return userID;
   } catch (e) {
-    return 'error caught: $e';
+     print('error caught: $e');
   }
 }
