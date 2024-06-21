@@ -1,7 +1,7 @@
 import 'dart:convert';
 import '1-util.dart';
 
-Future<String> getUserID() async {
+Future<String> getUserId() async {
   try {
     Map<String, dynamic> userData = jsonDecode(await fetchUserData());
     String userID = userData['id'];
