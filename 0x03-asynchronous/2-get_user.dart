@@ -4,8 +4,8 @@ import '2-util.dart';
 Future<String> getUser() async {
   try {
     Map<String, dynamic> userData = jsonDecode(await fetchUser());
-    Future<String> user = userData
-    return user;
+    String userID = userData['id'];
+    return userID;
   } catch (e) {
     return 'error caught: $e';
   }
