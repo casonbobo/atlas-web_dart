@@ -3,7 +3,7 @@ import '3-util.dart';
 
 Future<String> greetUser() async {
   try {
-    Map<String, dynamic> userData = jsonDecode(await fetchUser());
+    Map<String, dynamic> userData = jsonDecode(await fetchUserData());
     String username = userData['username'];
     return 'Hello $username';
   } catch (e) {
